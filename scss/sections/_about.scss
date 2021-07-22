@@ -1,0 +1,27 @@
+.about {
+    color: $text-GrayBlue50;
+    padding-top: vh(95);
+    .row {
+        margin: vw(-15);
+    }
+    &-item {
+        margin: vw(15);
+        padding: vw(60) vw(54) vw(38) vw(49);
+        box-sizing: border-box;
+        background: $bg-white;
+        box-shadow: 0 2px 5px rgba(54, 61, 77, 0.03);
+        border-radius: 10px;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__card-title {
+        @include font(vw(16), 600, vh(30));
+        text-align: center;
+    }
+    &__card-text {
+        @include font(vw(16), 600, vh(25));
+        color: $text-GrayBlue70;
+        text-align: center;
+    }
+}

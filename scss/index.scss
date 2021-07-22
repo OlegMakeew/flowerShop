@@ -1,0 +1,90 @@
+@import './helpers/fonts';
+@import './helpers/mixins';
+@import './helpers/variables';
+@import './helpers/functions';
+
+@import './components/header';
+@import './components/footer';
+
+@import './sections/hero';
+@import './sections/about';
+@import './sections/service';
+@import './sections/catalog';
+@import './sections/social';
+@import './sections/location';
+
+
+body {
+    margin: 0;
+    font-family: 'SF Pro Display';
+    background: $bg-body;
+}
+ul, h1, h2, p, div, span{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: vw(1110);
+    margin: 0 auto;
+}
+.bg-text {
+    @include font(vw(200), 800, vh(220));
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #002881;
+    opacity: 0.03;
+    z-index: -1;
+}
+
+.title {
+    @include font(vw(36), 400, vh(60) );
+    margin: vh(65) 0 vh(65);
+    color: $text-GrayBlue50;
+}
+.text {
+    display: inline-block;
+    width: vw(640);
+    @include font(vw(14), 600, vh(30));
+    margin-bottom: vh(70);
+    color: $text-GrayBlue70;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .row {
+    flex-wrap: nowrap;
+}
+.col-6 {
+    width: 50%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-3 {
+    width: 25%;
+}
+.badge{
+    @include font(vw(12), 800, vh(20));
+    padding: vh(5) vh(17);
+    border-radius: vh(30);
+    text-decoration: none;
+    text-align: center;
+    &_pink {
+        background: $link-background;
+        color: $link-text;
+    }
+    &_orange {
+        background: $link-background;
+        color: $link-text__orange;
+    }
+}
+

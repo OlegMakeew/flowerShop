@@ -1,0 +1,74 @@
+.catalog {
+    text-align: center;
+    &-item {
+        position: relative;
+        background-color: $bg-white;
+        padding: vw(32) 0 0 0;
+        box-sizing: border-box;
+        &__title {
+            @include font(vw(13), 700, vw(25));
+            color: $text-GrayBlue60;
+        }
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: vw(60);
+            border: vw(2) solid $border-color;
+        }
+        &__icon {
+            position: absolute;
+            right: vw(26);
+            top: vw(26);
+            cursor: pointer;
+        }
+        &__rating {
+            width: 33.3%;
+            @include flex;
+            span {
+                @include font(vw(13), 700, vw(25));
+                color: $text-GrayBlue60;
+            }
+        }
+        &__price {
+            margin-top: vw(-2);
+            margin-bottom: vw(-3);
+            width: 33.3%;
+            @include font(vw(13), 700, vw(25));
+            @include flex;
+            color: $text-GrayBlue60;
+            align-self: stretch;
+            border: vw(2) solid $border-color;
+        }
+        &__buy {
+            width: 33.3%;
+            @include font(vw(13), 700, vw(25));
+            position: relative;
+            color: $text-pink;
+            border: none;
+            align-self: stretch;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 1;
+            overflow: hidden;
+            &::before {
+                content: '';
+                position: absolute;
+                right: -100%;
+                bottom: 0;
+                background-color: $bg-pink;
+                width: 100%;
+                height: 100%;
+                transition: 0.3s;
+                z-index: -1;
+            }
+            &:hover {
+                color: $text-white;
+                &::before {
+                    right: 0;
+                }
+            }
+        }
+    }
+}

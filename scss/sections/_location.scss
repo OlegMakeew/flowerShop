@@ -1,0 +1,46 @@
+.location {
+    margin-top: vh(125);
+    .map {
+        width: vw(1110);
+        height: vw(540);
+    }
+    ul{
+        list-style: none;
+    }
+    &__top {
+        text-align: center;
+    }
+    &__map{
+        position: relative;
+    }
+    &-modal {
+        padding: vw(55);
+        position: absolute;
+        right: 5%;
+        bottom: 11%;
+        background-color: $bg-white;
+        img {
+            width: vw(20);
+            height: vw(20);
+            margin-right: vw(36);
+        }
+        &__item {
+            @include font(vw(13), 700, vw(25));
+            color: $text-GrayBlue60; 
+            display: flex;
+            align-items: center;
+            margin-bottom: vh(25);
+            &:last-child {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 0;
+                span:first-child {
+                    color: $text-GrayBlue85;
+                }
+            }
+            span + span {
+                margin-left: vw(15);
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.footer {
+    padding-top: vh(93);
+    border-top: 1px solid rgba(237, 239, 242, 1);
+    &__content {
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: vh(65);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: rgba(237, 239, 242, 1);
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            height: 1px;
+        }
+    }
+    &__logo {
+        @include font(vw(24), 700, vw(30));
+        color: $text-GrayBlue50;
+    }
+    &__nav {
+        width: vw(280);
+        padding-right: vw(130);
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: vw(40);
+                @include font(vw(13), 700, vw(25));
+                color: $text-GrayBlue70;
+                padding-right: vw(50);
+                margin-bottom: vh(20);
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    &__review {
+        padding-left: vw(80);
+    }
+    &__stars{
+        margin-bottom: vh(20);
+    }
+    &__customers {
+        @include font(vw(14), 700, vw(30));
+        color: $text-GrayBlue70;
+        svg {
+            margin-left: vw(23);
+        }
+    }
+    &__company {
+        @include flex(space-between);
+        margin: vh(50) 0 vh(45);
+        &-info {
+            @include font(vw(13), 700, vw(25));
+            color: $text-GrayBlue70;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                @include font(vw(13), 700, vw(25));
+                color: $text-GrayBlue70;
+                padding-right: vw(50);
+                &:last-child {
+                    padding-right: vw(72);
+                }
+            }
+        }
+    }
+}
