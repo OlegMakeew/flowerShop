@@ -56,8 +56,9 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .footer {
+
+.footer {
+    @include mobile {
         padding: vmin(90) 0 0;
         text-align: center;
         &__logo {

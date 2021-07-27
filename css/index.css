@@ -292,7 +292,7 @@
   color: #7D8FB3;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .footer {
     padding: 24vmin 0 0;
     text-align: center;
@@ -482,7 +482,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-position: center -8vmin;
   }
@@ -594,7 +594,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .about {
     padding-top: 25.33333vmin;
   }
@@ -780,19 +780,27 @@
           transform: translateX(0.3125vw);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .service {
     padding: 13.33333vmin 0;
   }
   .service__row {
     margin-bottom: 7.8125vw;
   }
+  .service__row:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .service-item.service-item__image {
     padding: 2.66667vmin;
-    min-height: 80vmin;
+    min-height: 53.33333vmin;
   }
   .service-item.service-item__image img {
     height: 93.33333vmin;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 2.66667vmin;
   }
   .service-item.service-item__image .play {
@@ -816,8 +824,8 @@
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 9.6vmin;
-    line-height: 16vmin;
+    font-size: 6.93333vmin;
+    line-height: 10.66667vmin;
   }
   .service-item__link {
     font-family: 'SF Pro Display';
@@ -830,8 +838,8 @@
     margin-left: 14.66667vmin;
   }
   .service .next {
-    bottom: vmni(50);
-    right: 13.33333vmin;
+    bottom: 2.66667vmin;
+    right: 2.66667vmin;
     width: 16vmin;
     height: 16vmin;
   }
@@ -967,7 +975,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .catalog-item {
     padding: 8.53333vmin 0 0 0;
   }
@@ -1081,20 +1089,23 @@
           transform: translate(-50%, -50%) scale(1);
 }
 
-@media screen and (max-width: 1024px) {
-  social {
+@media screen and (max-width: 768px) {
+  .social {
     padding: 32vmin 0 33.33333vmin;
   }
-  social .slick-prev.slick-arrow,
-  social .slick-next.slick-arrow {
-    top: -45.33333vmin;
+  .social .slick-prev.slick-arrow,
+  .social .slick-next.slick-arrow {
+    top: -18.66667vmin;
     width: 16vmin;
     height: 16vmin;
   }
-  social-item {
+  .social-item {
     padding: 4vmin;
   }
-  social-item__link {
+  .social-item img {
+    width: 100%;
+  }
+  .social-item__link {
     width: 21.33333vmin;
     height: 21.33333vmin;
   }
@@ -1169,7 +1180,7 @@
   margin-left: 0.9375vw;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .location {
     margin-top: 33.33333vmin;
   }
@@ -1289,7 +1300,7 @@ hr {
   color: #FF6633;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 8vmin;
@@ -1305,8 +1316,8 @@ hr {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 9.6vmin;
-    line-height: 16vmin;
+    font-size: 6.93333vmin;
+    line-height: 10.66667vmin;
     margin: 17.33333vmin 0 17.33333vmin;
   }
   .text {

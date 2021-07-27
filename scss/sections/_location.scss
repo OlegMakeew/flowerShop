@@ -45,8 +45,9 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .location {
+
+.location {
+    @include mobile {
         margin-top: vmin(125);
         .map {
             width: 100%;

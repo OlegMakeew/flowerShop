@@ -89,7 +89,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1024px) { 
+@include mobile { 
     .container {
         max-width: 100%;
         padding: 0 vmin(30);
@@ -99,7 +99,7 @@ hr {
     }
     
     .title {
-        @include font(vmin(36), 400, vmin(60) );
+        @include font(vmin(26), 400, vmin(40) );
         margin: vmin(65) 0 vmin(65);
     }
     .text {
