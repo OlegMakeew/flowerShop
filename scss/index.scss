@@ -64,9 +64,6 @@ hr {
     display: flex;
     flex-wrap: wrap;
 }
-.about .row {
-    flex-wrap: nowrap;
-}
 .col-6 {
     width: 50%;
 }
@@ -89,6 +86,39 @@ hr {
     &_orange {
         background: $link-background;
         color: $link-text__orange;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .container {
+        width: 100%;
+    }
+    .bg-text {
+        @include font(vmin(60), 800, vmin(70));
+    }
+    
+    .title {
+        @include font(vmin(36), 400, vmin(60) );
+        margin: vmin(65) 0 vmin(65);
+    }
+    .text {
+        width: 100%;
+        @include font(vmin(14), 600, vmin(30));
+        margin-bottom: vmin(70);
+    }
+    
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col-4, .col-3, .col-6  {
+        width: 100%;
+    }
+    .badge{
+        @include font(vmin(12), 800, vmin(20));
+        padding: vmin(5) vmin(17);
+        border-radius: vmin(30);
     }
 }
 

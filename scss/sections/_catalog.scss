@@ -72,3 +72,35 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .catalog {
+        &-item {
+            padding: vmin(32) 0 0 0;
+            &__title {
+                @include font(vmin(13), 700, vmin(25));
+            }
+            &__bottom {
+                min-height: vmin(60);
+            }
+            &__icon {
+                right: vmin(26);
+                top: vmin(26);
+            }
+            &__rating {
+                span {
+                    @include font(vmin(13), 700, vmin(25));
+                }
+            }
+            &__price {
+                margin-top: vmin(-2);
+                margin-bottom: vmin(-3);
+                @include font(vmin(13), 700, vmin(25));
+            }
+            &__buy {
+                @include font(vmin(13), 700, vmin(25));
+            }
+        }
+    }
+}

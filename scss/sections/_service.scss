@@ -89,3 +89,48 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .service {
+        padding: vmin(50) 0;
+        &__row {
+            margin-bottom: vw(125);
+        }
+        &-item.service-item__image {
+            padding: vmin(10);
+            min-height: vmin(300);
+            img {
+                height: vmin(350);
+                border-radius: vmin(10);
+            }
+            .play {
+                width: vmin(60);
+                height: vmin(60);
+                box-shadow: 0 vmin(10) vmin(30) $bg-pink;
+                &:hover {
+                    box-shadow: 0 vmin(10) vmni(30) $bg-white;
+                }
+            }
+            .service-item__subtitle {
+                @include font(vmin(16), 600, vmin(30));
+            }
+        }
+        &-item {
+            &__title {
+                @include font(vmin(36), 400, vmin(60));
+            }
+            &__link {
+                @include font(vmin(16), 400, vmin(30));
+                svg {
+                    margin-left: vmin(55);
+                }
+            }
+        }
+        .next {
+            bottom: vmni(50);
+            right: vmin(50);
+            width: vmin(60);
+            height: vmin(60);
+        }
+    }
+}

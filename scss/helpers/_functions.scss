@@ -4,3 +4,7 @@
 @function vw($px, $base: 1600) {
 	@return $px / $base * 100vw;
 };
+
+@function vmin($px, $base: 375) {
+	@return $px / $base * 100vmin;
+};

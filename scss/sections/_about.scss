@@ -25,3 +25,19 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .about {
+        padding-top: vmin(95);
+        &-item {
+            margin: vmin(15);
+            padding: vmin(60) vmin(54) vmin(38) vmin(49);
+        }
+        &__card-title {
+            @include font(vmin(16), 600, vmin(30));
+        }
+        &__card-text {
+            @include font(vmin(16), 600, vmin(25));
+        }
+    }
+}
