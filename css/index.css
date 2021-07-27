@@ -498,7 +498,7 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    background-position: center -17.33333vmin;
+    background-position: center -8vmin;
   }
   .hero__content {
     padding-top: 58.66667vmin;
@@ -519,7 +519,7 @@
     font-weight: 400;
     font-size: 13.33333vmin;
     line-height: 12vmin;
-    margin: 17.86667vmin 0 18.13333vmin;
+    margin: 8vmin 0 8vmin;
   }
   .hero-list {
     margin-bottom: 16vmin;
@@ -557,6 +557,7 @@
     font-weight: 700;
     font-size: 3.73333vmin;
     line-height: 8vmin;
+    bottom: 0;
     padding: 4vmin 8vmin;
     -webkit-box-shadow: 0 2.66667vmin 8vmin rgba(54, 61, 77, 0.25);
             box-shadow: 0 2.66667vmin 8vmin rgba(54, 61, 77, 0.25);

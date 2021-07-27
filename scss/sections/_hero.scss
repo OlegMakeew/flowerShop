@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 1024px) {
 	.hero {
-		background-position: center vmin(-65);
+		background-position: center vmin(-30);
 		&__content {
 			padding-top: vmin(220);
 			max-width: 100%;
@@ -96,7 +96,7 @@
 		}
 		&__title {
 			@include font(vmin(50), 400, vmin(45));
-			margin: vmin(67) 0 vmin(68);
+			margin: vmin(30) 0 vmin(30);
 		}
 		&-list {
 			margin-bottom: vmin(60);
@@ -121,6 +121,7 @@
 		}
 		&__anchor {
 			@include font(vmin(14), 700, vmin(30));
+			bottom: 0;
 			padding: vmin(15) vmin(30);
 			box-shadow: 0 vmin(10) vmin(30) rgba(54, 61, 77, 0.25);
 			border-radius: vmin(30);
