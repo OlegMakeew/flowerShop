@@ -90,17 +90,22 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .service {
+
+.service {
+    @include mobile {
         padding: vmin(50) 0;
         &__row {
             margin-bottom: vw(125);
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+            }
         }
         &-item.service-item__image {
             padding: vmin(10);
-            min-height: vmin(300);
+            min-height: vmin(200);
             img {
                 height: vmin(350);
+                object-fit: cover;
                 border-radius: vmin(10);
             }
             .play {
@@ -117,7 +122,7 @@
         }
         &-item {
             &__title {
-                @include font(vmin(36), 400, vmin(60));
+                @include font(vmin(26), 400, vmin(40));
             }
             &__link {
                 @include font(vmin(16), 400, vmin(30));
@@ -127,8 +132,8 @@
             }
         }
         .next {
-            bottom: vmni(50);
-            right: vmin(50);
+            bottom: vmin(10);
+            right: vmin(10);
             width: vmin(60);
             height: vmin(60);
         }
