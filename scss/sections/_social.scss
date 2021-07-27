@@ -46,3 +46,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  social {
+    padding: vmin(120) 0 vmin(125);
+    .slick-prev.slick-arrow,
+    .slick-next.slick-arrow {
+      top: vmin(-170);
+      width: vmin(60);
+      height: vmin(60);
+    }
+    &-item {
+      padding: vmin(15);
+      &__link {
+        width: vmin(80);
+        height: vmin(80);
+      }
+    }
+  }
+  
+}

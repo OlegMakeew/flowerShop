@@ -44,3 +44,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .location {
+        margin-top: vmin(125);
+        .map {
+            width: 100%;
+            height: vmin(270);
+        }
+        &-modal {
+            opacity: 0;
+        }
+    }
+}
