@@ -79,46 +79,35 @@
 	color: $text-white;
 }
 
-@media screen and (max-width: 1024px) {
-	.header {
+.header {
+	@include mobile {
 		padding-top: vmin(20);
 		&__row {
-			flex-wrap: wrap;
+			justify-content: space-between;
+			flex-direction: row-reverse;
 		}
-	}
-	.burger {
-		margin-right: vmin(40);
-		span {
-			width: vmin(18);
-			height: vmin(2);
-			border-radius: vmin(3);
+		.nav, .call, .search {
+			display: none;
 		}
-	}
-	.logo {
-		@include font(vmin(20), 700, vmin(30));
-		margin-right: vmin(115);
-	}
-	.search {
-		margin-right: vmin(50);
-		svg {
-			width: vmin(18);
+		.burger {
+			margin-right: 0;
+			span {
+				width: vmin(25);
+				height: vmin(2.5);
+				min-height: 2px;
+				min-width: 18px;
+				border-radius: vmin(3);
+				&::before, &::after {
+					transform: translateY(vmin(-7));
+				}
+				&::after {
+					transform: translateY(vmin(7));
+				}
+			}
 		}
-		input {
-			@include font(vmin(14), 600, vmin(30));
-			margin-left: vmin(26);
+		.logo {
+			@include font(vmin(20), 700, vmin(30));
+			margin-right: 0;
 		}
-	} 
-	
-	.nav {
-		&__item {
-			margin-right: vmin(34);
-		}
-		&__link {
-			@include font(vmin(13), 700, vmin(25));
-		}
-	}
-	.call {
-		@include font(vmin(13), 700, vmin(25));
-		margin-left: vmin(8.7);
 	}
 }

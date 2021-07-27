@@ -91,7 +91,8 @@ hr {
 
 @media screen and (max-width: 1024px) { 
     .container {
-        width: 100%;
+        max-width: 100%;
+        padding: 0 vmin(30);
     }
     .bg-text {
         @include font(vmin(60), 800, vmin(70));
