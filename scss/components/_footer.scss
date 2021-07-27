@@ -1,74 +1,56 @@
 .footer {
-    padding-top: vh(93);
-    border-top: 1px solid rgba(237, 239, 242, 1);
-    &__content {
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: vh(65);
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            background-color: rgba(237, 239, 242, 1);
-            bottom: 0;
-            right: 0;
-            width: 100vw;
-            height: 1px;
-        }
-    }
+    padding: vw(90) 0 0;
     &__logo {
         @include font(vw(24), 700, vw(30));
         color: $text-GrayBlue50;
+        margin: 0;
     }
-    &__nav {
-        width: vw(280);
-        padding-right: vw(130);
-        ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                width: vw(40);
-                @include font(vw(13), 700, vw(25));
-                color: $text-GrayBlue70;
-                padding-right: vw(50);
-                margin-bottom: vh(20);
-                &:last-child {
-                    padding-right: 0;
-                }
-            }
+    &__reviews {
+        display: flex;
+        align-items: center;
+        span {
+            @include font(vw(14), 700, vw(30));
+            color: $text-GrayBlue70; 
+            margin-right: vw(23);
         }
     }
-    &__review {
-        padding-left: vw(80);
+    &__rating {
+        margin-bottom: vw(20);
     }
-    &__stars{
-        margin-bottom: vh(20);
-    }
-    &__customers {
-        @include font(vw(14), 700, vw(30));
-        color: $text-GrayBlue70;
-        svg {
-            margin-left: vw(23);
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        &__item {
+            width: 33.33%;
+            margin-bottom: vw(20);
         }
-    }
-    &__company {
-        @include flex(space-between);
-        margin: vh(50) 0 vh(45);
-        &-info {
+        &__link {
             @include font(vw(13), 700, vw(25));
             color: $text-GrayBlue70;
         }
+    }
+    &__row {
+        justify-content: space-between;
+        padding-bottom: vw(65);
+    }
+    &__rights {
+        @include font(vw(13), 700, vw(25));
+        color: $text-GrayBlue70;
+    }
+    &__bottom {
+        padding: vw(48) 0 vw(42);
+        display: flex;
+        justify-content: space-between;
         ul {
             display: flex;
             list-style: none;
             li {
+                margin-left: vw(55);
+            }
+            a {
                 @include font(vw(13), 700, vw(25));
                 color: $text-GrayBlue70;
-                padding-right: vw(50);
-                &:last-child {
-                    padding-right: vw(72);
-                }
             }
         }
     }
