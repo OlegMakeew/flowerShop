@@ -96,10 +96,10 @@
 		}
 		&__title {
 			@include font(vmin(50), 400, vmin(45));
-			margin: vmin(30) 0 vmin(30);
+			margin: vmin(20) 0 vmin(20);
 		}
 		&-list {
-			margin-bottom: vmin(60);
+			margin-bottom: vmin(10);
 			&__item {
 				@include font(vmin(14), 700, vmin(30));
 				margin-right: vmin(15);
