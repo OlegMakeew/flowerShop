@@ -143,29 +143,7 @@
 }
 
 .footer {
-  padding-top: 9.08203vh;
-  border-top: 1px solid #edeff2;
-}
-
-.footer__content {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 6.34766vh;
-  position: relative;
-}
-
-.footer__content::before {
-  content: '';
-  position: absolute;
-  background-color: #edeff2;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  height: 1px;
+  padding: 5.625vw 0 0;
 }
 
 .footer__logo {
@@ -175,100 +153,99 @@
   font-size: 1.5vw;
   line-height: 1.875vw;
   color: #4D5E80;
+  margin: 0;
 }
 
-.footer__nav {
-  width: 17.5vw;
-  padding-right: 8.125vw;
-}
-
-.footer__nav ul {
-  list-style: none;
+.footer__reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer__nav ul li {
-  width: 2.5vw;
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.8125vw;
-  line-height: 1.5625vw;
-  color: #7D8FB3;
-  padding-right: 3.125vw;
-  margin-bottom: 1.95312vh;
-}
-
-.footer__nav ul li:last-child {
-  padding-right: 0;
-}
-
-.footer__review {
-  padding-left: 5vw;
-}
-
-.footer__stars {
-  margin-bottom: 1.95312vh;
-}
-
-.footer__customers {
+.footer__reviews span {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 0.875vw;
   line-height: 1.875vw;
   color: #7D8FB3;
+  margin-right: 1.4375vw;
 }
 
-.footer__customers svg {
-  margin-left: 1.4375vw;
+.footer__rating {
+  margin-bottom: 1.25vw;
 }
 
-.footer__company {
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.footer-list__item {
+  width: 33.33%;
+  margin-bottom: 1.25vw;
+}
+
+.footer-list__link {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
+  color: #7D8FB3;
+}
+
+.footer__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 4.0625vw;
+}
+
+.footer__rights {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8125vw;
+  line-height: 1.5625vw;
+  color: #7D8FB3;
+}
+
+.footer__bottom {
+  padding: 3vw 0 2.625vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 4.88281vh 0 4.39453vh;
 }
 
-.footer__company-info {
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.8125vw;
-  line-height: 1.5625vw;
-  color: #7D8FB3;
-}
-
-.footer__company ul {
+.footer__bottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.footer__company ul li {
+.footer__bottom ul li {
+  margin-left: 3.4375vw;
+}
+
+.footer__bottom ul a {
   font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 0.8125vw;
   line-height: 1.5625vw;
   color: #7D8FB3;
-  padding-right: 3.125vw;
-}
-
-.footer__company ul li:last-child {
-  padding-right: 4.5vw;
 }
 
 .hero {
@@ -886,6 +863,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+hr {
+  border-color: #EDEFF2;
+  margin: 0;
 }
 
 .container {
